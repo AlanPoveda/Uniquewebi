@@ -1,39 +1,62 @@
-.navbars{
+.headerContainer {
+    height: 5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.29); 
     background: #070D18;
     color: white;
-    height: 5rem;
-
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    
-
-    button{
-        border:0.1rem solid #42BDEC;
-        border-radius:0.2rem;
-
-        background-color: transparent;
-        color: white;
-        width:6.5rem;
-        height: 2.2rem;
-        margin-left: 5em;
-
-        transition:filter 0.5s;
-
-        &:hover{
-            filter: brightness(2);
-            color: #42BDEC;
-        }
-    }
-
-    .links {
-        a{
-            padding-right: 20px;
-            
-            
-        }
-        
-    }
-
 }
 
+.headerContent {
+    max-width: 1120px;
+    height: 5rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    display: flex;
+    align-items: center;
+
+    nav {
+        margin-left: 5rem;
+        height: 5rem;
+
+
+        a {
+            display: inline-block;
+            position: relative;
+            padding: 0 0.5rem;
+            height: 5rem;
+            line-height: 5rem;
+            color: var(--gray-300);
+
+            transition: color 0.4s;
+
+            &:hover {
+                color: var(--white-300);
+            }
+
+				&.active {
+                color: var(--white-300);
+                font-weight: bold;
+            }
+
+            &.active::after {
+                content: '';
+                height: 3px;
+                border-radius: 3px 3px 0 0;
+                width:100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: #42BDEC;
+            }
+
+        }
+
+        button {
+            margin-left: 20rem;
+            
+        }
+
+      
+    }
+    
+}

@@ -1,0 +1,17 @@
+.buttonHeader{
+    border:0.1rem solid #42BDEC;
+    border-radius:0.2rem;
+
+    background-color: transparent;
+    color: white;
+    width:6.5rem;
+    height: 2.2rem;
+    margin-left: 5em;
+
+    transition:filter 0.5s;
+
+    &:hover{
+        filter: brightness(2);
+        color: #42BDEC;
+    }
+}
