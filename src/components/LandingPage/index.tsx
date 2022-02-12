@@ -12,7 +12,7 @@ export const LandingPage = () => {
                 We harness the lasted technologies to develop cutting-edge
                 digital solutions for modern business requirements
             </p>
-            <a>Get a Quote <button> -> </button></a>
+            <a>Get a Quote <button>{'->'}</button></a>
         </div>
     );
 };
